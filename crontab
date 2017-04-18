@@ -1,0 +1,9 @@
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+
+# For more information see the manual pages of crontab(5) and cron(8)
+#
+# m h  dom mon dow   command
+
+0 2 * * * /etc/init.d/xoa-refresh.sh > /var/log/xoa-refresh.log 2>&1
